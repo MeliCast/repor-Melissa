@@ -18,6 +18,9 @@
                     type="text" 
                     id="nombres"
                     placeholder="Ej. Juan Luis"
+                    required
+                    minLength="2"
+                    maxLength="10"
                 >
                 <br>
                 <label for="apellidos">Apellidos:</label>
@@ -25,6 +28,8 @@
                     type="text"
                     placeholder="Ej. Perez Santos"
                     id="apellidos"
+                    required
+                    pattern="[a-z]"
                 >
                 <br>
                 <label for="correo">email:</label>
@@ -46,6 +51,8 @@
                     type="number"
                     placeholder="Ej. 18"
                     id="edad"
+                    min="0"
+                    max="140"
                 >
                 <br>
                 <label>Género:</label>
