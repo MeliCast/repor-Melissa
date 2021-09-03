@@ -76,6 +76,46 @@
                 Juegos de Mensaje
                 <input type="checkbox" value="música">
                 Música
+                <br>
+                <label>Ciudad:</label>
+                <select>
+                    <option selected disabled>Selecione una opción</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AN">Ancash</option>
+                    <option value="AP">Apurímac</option>
+                    <option value="AR">Arequipa</option>
+                    <option value="CU">Cusco</option>
+                    <option value="LI">Lima</option>
+                    <option value="PI">Piura</option>
+                    <option value="TA">Tacna</option>
+                </select>
+                <br>
+                <label>Distritos:</label>
+                <input list="distritos">
+                <datalist id="distritos">
+                    <option value="Lima">Lima Cercado</option>
+                    <option value="Ate">Ate</option>
+                    <option value="Breña">Breña</option>
+                    <option value="Pueblo Libre">Pueblo Libre</option>
+                    <option value="San Miguel">San Miguel</option>
+                    <option value="San Isidro">San Isidro</option>
+                </datalist>
+                <br>
+                <label>Color:</label>
+                <input type="color">
+                <br>
+                <label>Fecha de nacimiento:</label>
+                <input type="date">
+                <br>
+                <label>Hora:</label>
+                <input type="time">
+                <br>
+                <label>Biografía</label>
+                <textarea cols="20" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+                <button>Click</button>
             </form>
         </section>
     </main>
