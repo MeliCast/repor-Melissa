@@ -10,30 +10,36 @@
             color:steelblue;
             font-family: Arial; 
         }
+        footer {
+            background-color: lightgreen;
+        }
     </style>
+    <!-- esta manera es la idea ya que separamos todo y podemos reutilizarlo en otros documentos html-->
+    <link rel="stylesheet" href="./02-css.css">
 </head>
 <body>
     <header>
-        <h1 style="color:blue; background:lightcoral;">
+        <h1 style="color:blue; background:lightcoral;" class="titulo1">
             Estilos CSS
         </h1>
     </header>
     <main>
         <section>
             <h2>Artículos</h2>
-            <article>
+            <article class="rojo bordeazul">
                 <h3>Vacunatón</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officiis!</p>
             </article>
-            <article>
+            <article id="importante">
                 <h3>Chalaca de Tapia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quis.</p>
             </article>
         </section>
     </main>
     <footer>
-        <section>
-            <h2>Contacto</h2>
+        <section class="rojo">
+            <h2 class="sub">Contacto</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
         </section>
     </footer>
 </body>
