@@ -1,0 +1,22 @@
+/* etiquetas, .clases , #id */
+article,
+h1 {
+    text-decoration: underline;
+}
+/* todos los párrafos p que sean hijos dentro de un article */
+article p {
+    background-color: aquamarine;
+}
+
+/*  > el mayor que, hace referecnia a los hijos */
+ol > li {
+    color: rebeccapurple;
+}
+
+article >p{
+    color: blue;
+}
+
+#caja >span{
+    background-color: yellow; 
+}
