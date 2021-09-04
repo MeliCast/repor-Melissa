@@ -14,9 +14,18 @@ ol > li {
 }
 
 article >p{
-    color: blue;
+    color: red;
 }
 
 #caja >span{
     background-color: yellow; 
+}
+
+/* PSEUDOCLASES */
+/* nth-of-type (numero o un indicador) */
+tr:nth-of-type(odd){
+    background-color: chocolate;
+}
+tr:nth-of-type(even){
+    background-color: greenyellow;
 }
