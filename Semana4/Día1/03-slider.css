@@ -4,7 +4,7 @@
     border: 1px solid gray; 
     position: relative;  
      /*everflow: hidden todo lo que sobresalga de los límites de padre, desaparece */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .slide{
@@ -18,21 +18,21 @@
     background-color: aquamarine;
     animation-name: animacion1;
     animation-duration: 10s;
-    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .hijo2{
     background-color: orangered;
     animation-name: animacion2;
     animation-duration: 10s;
-    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .hijo3{
     background-color: cornflowerblue;
     animation-name: animacion3;
     animation-duration: 10s;
-    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 @keyframes animacion1 {
@@ -59,7 +59,7 @@
     0%{
         top: 100%;
     }
-    3%{
+    33%{
         top: 100%;
     }
     37%{
