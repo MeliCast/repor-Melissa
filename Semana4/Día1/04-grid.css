@@ -46,5 +46,5 @@
 }
 
 .item:nth-of-type(2) {
-    grid-area: header;
+    grid-area: main;
 }
