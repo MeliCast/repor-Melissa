@@ -48,6 +48,7 @@ button{
 button:hover{
     /* hover,se activa cuando el puntero del mouse esta encima */
     background-color: white;
+    /* rgb(rr, gg, bb) */
     color: rgb(59, 59, 59);
 }
 
@@ -81,6 +82,10 @@ div {
     padding: 50px;
 }
 
+.caracteristicas h2 {
+    text-align: center;
+}   
+
 .tarjetas {
     display: flex;
 }
@@ -97,7 +102,7 @@ div {
 }
 
 .tarjeta img{
-    width: : 60px;
+    width: 60px;
 }
 
 .tarjeta a{
@@ -163,7 +168,7 @@ div {
     }   
 
 .hide-menu-btn,
-.show-menu-btn {´
+.show-menu-btn {
     display: block;
     }
 
