@@ -123,6 +123,9 @@ div {
     font-size: 30px;
     display: none;
 }
+.menu {
+    transition-duration: 0.5s;
+}
 
 /* mediaqueries */
 @media screen and (max-width:768px){
