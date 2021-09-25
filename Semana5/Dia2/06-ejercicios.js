@@ -36,7 +36,7 @@ let galletas = 0;
 
 //patrón, voy a preguntar una y otra vez
 
-for(let i = 0; i < cantProductos; i++); {
+for(let i = 0; i < cantProductos; i++) {
 let producto = +prompt("Ingrese 1.Gaseosa 2.Leche 3.Galletas");
 
 switch (producto) {
@@ -51,6 +51,8 @@ switch (producto) {
         break;
     default:
         alert("Número erroneo");
+        i = i - 1;
+        // i --;
     }
 }
 
