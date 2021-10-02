@@ -20,7 +20,7 @@ let miTitulo = document.querySelector("h1");
 console.log(miTitulo);
 
 //innerHTML, es el contenido HTML de un elemento
-miTitulo.innerHTML = "Hola soy de nuevo Titulo";
+miTitulo.innerHTML = "Hola soy un nuevo Titulado";
 
 //EL HTML DENTRO DE LA ETQIUETA
 console.log(miTitulo.innerHTML);
@@ -84,9 +84,10 @@ let series = [
     "House of gragons",
     "Chernobyl",
     "Breaking Bad",
+    "Lupin",
 ];
 
-let divContenido = documento.getElementById("contenido");
+let divContenido = document.getElementById("contenido");
 
 //createElement("etiqueta") :"p", "ul", "h1", "td"
 let lista = document.createElement("ul");
@@ -103,4 +104,20 @@ series.forEach(function (programaTv) {
 // console.log(textoLI);
 
 lista.innerHTML = textoLI;
+
+let imagen = document.createElement("img")
+
+divContenido.appendChild(imagen);
+
+//setAttribute("nombre_attr","valor_attr")
+imagen.setAttribute("src","https://i.picsum.photos/id/76/200/300.jpg?hmac=SWpe2KMM2qFiQ8C8WHIZilaJb7KVkgOVVJPTbasGyUU");
+
+//clases de CSS
+//a un elemento le podemos aplicar varias clases
+//add("nombreclase")
+lista.classList.add("resaltado");
+lista.classList.add("redondeado");
+// lista.classList.add("verdecito");
+lista.classList.remove("resaltado");
+
 
