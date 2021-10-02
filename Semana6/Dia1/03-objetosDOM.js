@@ -73,7 +73,7 @@ boxes.forEach(function(bx){
 console.log(boxes[0].innerHTML);
 
 //crear elementos
-let series = {
+let series = [
     "Squid Game",
     "Pasión de Gavilanes",
     "Dark",
@@ -84,9 +84,23 @@ let series = {
     "House of gragons",
     "Chernobyl",
     "Breaking Bad",
-};
+];
+
+let divContenido = documento.getElementById("contenido");
 
 //createElement("etiqueta") :"p", "ul", "h1", "td"
 let lista = document.createElement("ul");
 
+//agregando ese elemento como hijo
+//push a un elemento ya existente
 divContenido.appendChild(lista);
+
+let textoLI = "";
+series.forEach(function (programaTv) {
+    textoLI = textoLI + `<li>${programaTv}</li>`;
+});
+
+// console.log(textoLI);
+
+lista.innerHTML = textoLI;
+
