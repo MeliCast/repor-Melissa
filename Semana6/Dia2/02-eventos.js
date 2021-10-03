@@ -47,14 +47,14 @@ divContenido.appendChild(btnVer);
 let esVisible = false; //flag
 
 
-btnVer.addEventListener("click",function() {
-    esVisible = !esVisible;
-    if (esVisible == false){
-        miInput.setAttribute("type", "text");
-    } else {
-        miInput.setAttribute("type", "password");
-    }
-});
+// btnVer.addEventListener("click",function() {
+//     esVisible = !esVisible;
+//     if (esVisible == false){
+//         miInput.setAttribute("type", "text");
+//     } else {
+//         miInput.setAttribute("type", "password");
+//     }
+// });
 
 
 
@@ -73,12 +73,51 @@ btnVer.addEventListener("click",function() {
 
 
 
-// function Mostrar(){
-//     esVisible =! esVisible;
-//     if (esVisible){
-//         miInput.setAttribute("type","password");
-//     } else{
-//         miInput.setAttribute("type","text");
-//     }    
-// }
-// btnVer.addEventListener("click", Mostrar);
+function Mostrar(){
+    esVisible =! esVisible;
+    if (esVisible){
+        miInput.setAttribute("type","password");
+    } else{
+        miInput.setAttribute("type","text");
+    }    
+}
+btnVer.addEventListener("click", Mostrar);
+
+
+
+
+//Capturar eventos
+
+let irAGoogle = document.createElement("a");
+
+irAGoogle.setAttribute("href", "https://www.google.com/");
+
+irAGoogle.innerText = "Llevame a Google";
+
+divContenido.appendChild(irAGoogle);
+
+///----
+//previene la acción por defecto de un evento, preventDefault()
+irAGoogle.addEventListener("click", function (evento) {
+    evento.preventDefault();
+    console.log(evento);
+});
+
+
+//capturar primero el formulario
+let miFormulario = document.getElementById("formulario");
+
+//submit, es la acción de enviar datos
+miFormulario.addEventListener("submit", function (evento){
+    evento.preventDefault();
+    console.log("Submiiit!!!");
+    //vamos a hacer envio de datos con Javascript
+    //Todo lo que obtengan de un input lo suele devolver como string
+    let nuevoUsuario = {
+        //he obtenido los datos de los input
+        // formulario.nombres_input.value
+        nombres: miFormulario.nombres.value,
+        apellidos: miFormulario.apellidos.value,
+    };
+    console.log(nuevoUsuario);
+})
