@@ -6,7 +6,7 @@ console.log(`iterador ${i}`);
 for(let i = 0: j < 5; j++) {
     console.log(j);
 }
-console.log(`iterador ${j}`);  //esto da error
+// console.log(`iterador ${j}`);  //esto da error
 
 //RESUMEN NO USEN VAR, AL MENOS UN LET
 
